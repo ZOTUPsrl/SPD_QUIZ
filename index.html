@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Abbina gli SPD ZOTUP</title>
+	<link type="text/css" href="css/style.css" rel="stylesheet" />
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+	<script src="js/script.js"></script>
+	<link rel="icon" href="imgs/icon.png" type="image/x-icon" />
+</head>
+
+<body>
+	<div class="header">
+		<img src="imgs/zotup_logo_ita.png" alt="Profile Picture">
+	  </div>
+
+	<div id="overallCon">
+
+		<!--DRAGGABLE THINGS-->
+		<div id="headCon" class="droppable2">
+			<div class="headcircle draggable" id="h202220"><img src="imgs/202220.png" />202220</div>
+			<div class="headcircle draggable" id="h242191"><img src="imgs/242191.png" />242191</div>
+			<div class="headcircle draggable" id="h210110"><img src="imgs/210110.png" />210110</div>
+			<div class="headcircle draggable" id="h204140"><img src="imgs/204140.png" />204140</div>
+			<div class="headcircle draggable" id="h215140"><img src="imgs/215140.png" />215140</div>
+			<div class="headcircle draggable" id="h342006"><img src="imgs/342006.png" />342006</div>
+			<div class="headcircle draggable" id="h207130"><img src="imgs/207130.png" />207130</div>
+			<div class="headcircle draggable" id="h218121"><img src="imgs/218121.png" />218121</div>
+			<div class="headcircle draggable" id="h318009"><img src="imgs/318009.png" />318009</div>
+			<div class="headcircle draggable" id="h202240"><img src="imgs/202240.png" />202240</div>
+		</div>
+		<!--END DRAGGABLE THINGS-->
+
+		
+		<div id="shareCon">
+				<p class="congrats">Congratulazioni, hai indovinato i 10 abbinamenti!</p>
+				<p id="share">Ti sono serviti 00 tentativi!</p>
+		</div>
+		
+
+		<div id="scoreCon">
+			<div class="instruct">Trascina i prodotti sul campo applicativo corretto</div>
+			<div class="score">Corretti: <span class="numDisp" id="numCorrect">0</span></div>
+			<div class="score">Tentativi: <span class="numDisp" id="numAttempts">0</span></div>
+		</div>
+		
+		<div style="clear:both"></div>
+
+		<div id="detail">
+			<div id="detailCon">
+				<div id="closebtn">X</div>
+				<div id="photoCon"></div>
+				<div id="desc"></div>
+			</div>
+		</div>
+
+		<!--DROP TARGETS-->
+		<div id="tatCon">
+
+			<div class="atattoo droppable" id="t342006" data-id="5">
+				<div class="messagewrong">Sbagliato. <br/>Riprova.</div>
+				<div class="messageright">Esatto</div>
+				<img src="imgs/342006.jpg" />
+				<div class="headcircleinside" id="342006inside"><img src="imgs/342006.png" />342006</div>
+			</div>
+			
+			<div class="atattoo droppable" id="t242191" data-id="1">
+				<div class="messagewrong">Sbagliato. <br/>Riprova.</div>
+				<div class="messageright">Esatto</div>
+				<img src="imgs/242191.jpg" />
+				<div class="headcircleinside" id="242191inside"><img src="imgs/242191.png" />242191</div>
+			</div>
+
+			<div class="atattoo droppable" id="t202220" data-id="0">
+				<div class="messagewrong">Sbagliato. <br/>Riprova.</div>
+				<div class="messageright">Esatto</div>
+				<img src="imgs/202220.jpg" />
+				<div class="headcircleinside" id="202220inside"><img src="imgs/202220.png" />202220</div>
+			</div>
+
+			<div class="atattoo droppable" id="t210110" data-id="2">
+				<div class="messagewrong">Sbagliato. <br/>Riprova.</div>
+				<div class="messageright">Esatto</div>
+				<img src="imgs/210110.jpg" />
+				<div class="headcircleinside" id="210110inside"><img src="imgs/210110.png" />210110</div>
+			</div>
+
+			<div class="atattoo droppable" id="t204140" data-id="3">
+				<div class="messagewrong">Sbagliato. <br/>Riprova.</div>
+				<div class="messageright">Esatto</div>
+				<img src="imgs/204140.jpg" />
+				<div class="headcircleinside" id="204140inside"><img src="imgs/204140.png" />204140</div>
+			</div>
+
+			<div class="atattoo droppable" id="t202240" data-id="9">
+				<div class="messagewrong">Sbagliato. <br/>Riprova.</div>
+				<div class="messageright">Esatto</div>
+				<img src="imgs/202240.jpg" />
+				<div class="headcircleinside" id="202240inside"><img src="imgs/202240.png" />202240</div>
+			</div>
+			
+			<div class="atattoo droppable" id="t215140" data-id="4">
+				<div class="messagewrong">Sbagliato. <br/>Riprova.</div>
+				<div class="messageright">Esatto</div>
+				<img src="imgs/215140.jpg" />
+				<div class="headcircleinside" id="215140inside"><img src="imgs/215140.png" />215140</div>
+			</div>
+			
+			<div class="atattoo droppable" id="t207130" data-id="6">
+				<div class="messagewrong">Sbagliato. <br/>Riprova.</div>
+				<div class="messageright">Esatto</div>
+				<img src="imgs/207130.jpg" />
+				<div class="headcircleinside" id="207130inside"><img src="imgs/207130.png" />207130</div>
+			</div>
+			
+			<div class="atattoo droppable" id="t318009" data-id="8">
+				<div class="messagewrong">Sbagliato. <br/>Riprova.</div>
+				<div class="messageright">Esatto</div>
+				<img src="imgs/318009.jpg" />
+				<div class="headcircleinside" id="318009inside"><img src="imgs/318009.png" />318009</div>
+			</div>
+
+			<div class="atattoo droppable" id="t218121" data-id="7">
+				<div class="messagewrong">Sbagliato. <br/>Riprova.</div>
+				<div class="messageright">Esatto</div>
+				<img src="imgs/218121.jpg" />
+				<div class="headcircleinside" id="218121inside"><img src="imgs/218121.png" />218121</div>
+			</div>
+			
+			
+		</div>
+		<!--END DROP TARGETS-->
+
+		<button id="resetButton">Ricomincia</button>
+
+
+	</div>
+
+	<div class="credits-con">
+    	Crediti: ZOTUP srl
+    </div>
+
+</body>
+
+</html>
